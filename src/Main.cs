@@ -4,7 +4,7 @@ using Godot;
 
 #if DEBUG
 using System.Reflection;
-using GoDotTest;
+using Chickensoft.GoDotTest;
 #endif
 
 // This entry-point file is responsible for determining if we should run tests.

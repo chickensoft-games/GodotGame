@@ -2,7 +2,7 @@ namespace Chickensoft.GodotGame;
 
 using System.Threading.Tasks;
 using Godot;
-using GoDotTest;
+using Chickensoft.GoDotTest;
 using GodotTestDriver;
 using GodotTestDriver.Drivers;
 using Shouldly;
