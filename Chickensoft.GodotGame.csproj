@@ -35,12 +35,12 @@
     <!-- Test dependencies go here! -->
 
     <!-- Dependencies added here will not be included in release builds. -->
-    <PackageReference Include="Chickensoft.GoDotTest" Version="1.1.7" />
+    <PackageReference Include="Chickensoft.GoDotTest" Version="1.1.8-godot4.0.3-rc.1" />
     <!-- Used to drive test scenes when testing visual code -->
     <PackageReference Include="GodotTestDriver" Version="2.0.0-pre2" />
     <!-- Bring your own assertion library for tests! -->
     <!-- We're using Shouldly for this example, but you can use anything. -->
-    <PackageReference Include="Shouldly" Version="4.1.0" />
+    <PackageReference Include="Shouldly" Version="4.2.1" />
     <!-- LightMock is a mocking library that works without reflection. -->
     <PackageReference Include="LightMock.Generator" Version="1.2.2" />
     <!-- LightMoq is a Chickensoft package which makes it more like Moq. -->
