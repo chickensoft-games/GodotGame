@@ -78,7 +78,7 @@ dotnet tool update --global dotnet-reportgenerator-globaltool
 
 > Running `dotnet tool update` for the global tool is often necessary on Apple Silicon computers to ensure the tools are installed correctly.
 
-You can collect code coverage and generate coverage badges by running the bash script in `coverage.sh` (on Windows, you can use the Git Bash shell that comes with git).
+You can collect code coverage and generate coverage badges by running the bash script `coverage.sh` (on Windows, you can use the Git Bash shell that comes with git).
 
 ```sh
 # Must give coverage script permission to run the first time it is used.
