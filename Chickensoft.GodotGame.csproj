@@ -35,7 +35,7 @@
     <!-- Test dependencies go here! -->
 
     <!-- Dependencies added here will not be included in release builds. -->
-    <PackageReference Include="Chickensoft.GoDotTest" Version="1.1.10" />
+    <PackageReference Include="Chickensoft.GoDotTest" Version="1.1.11-godot4.1.0-beta.1" />
     <!-- Used to drive test scenes when testing visual code -->
     <PackageReference Include="GodotTestDriver" Version="2.1.0" />
     <!-- Bring your own assertion library for tests! -->
