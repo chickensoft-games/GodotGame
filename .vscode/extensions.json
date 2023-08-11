@@ -5,6 +5,7 @@
     "josefpihrt-vscode.roslynator",
     "streetsidesoftware.code-spell-checker",
     "VisualStudioExptTeam.vscodeintellicode",
-    "DavidAnson.vscode-markdownlint"
+    "DavidAnson.vscode-markdownlint",
+    "alfish.godot-files"
   ]
 }
