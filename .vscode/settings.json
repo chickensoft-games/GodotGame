@@ -10,6 +10,7 @@
     "editor.formatOnType": false
   },
   "csharp.semanticHighlighting.enabled": true,
+  "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
   "editor.semanticHighlighting.enabled": true,
   // C# doc comment colorization gets lost with semantic highlighting, but we
   // need semantic highlighting for proper syntax highlighting with record
@@ -129,16 +130,15 @@
     }
   },
   "markdownlint.config": {
-    // Allow html in markdown.
-    "MD033": false,
     // Allow non-unique heading names so we don't break the changelog.
-    "MD024": false
+    "MD024": false,
+    // Allow html in markdown.
+    "MD033": false
   },
   "markdownlint.ignore": [
     "**/LICENSE"
   ],
   "omnisharp.enableEditorConfigSupport": true,
-  "omnisharp.enableImportCompletion": true,
   "omnisharp.enableMsBuildLoadProjectsOnDemand": false,
   "omnisharp.enableRoslynAnalyzers": true,
   "omnisharp.maxFindSymbolsItems": 3000,
