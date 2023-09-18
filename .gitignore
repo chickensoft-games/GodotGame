@@ -9,3 +9,5 @@ obj/
 .generated/
 .vs/
 .DS_Store
+
+*.translation
