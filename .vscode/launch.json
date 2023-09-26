@@ -1,16 +1,16 @@
 {
   "version": "0.2.0",
   "configurations": [
-    // For these launch configurations to work, you need to setup a GODOT4
+    // For these launch configurations to work, you need to setup a GODOT
     // environment variable. On mac or linux, this can be done by adding
     // the following to your .zshrc, .bashrc, or .bash_profile file:
-    // export GODOT4="/Applications/Godot.app/Contents/MacOS/Godot"
+    // export GODOT="/Applications/Godot.app/Contents/MacOS/Godot"
     {
       "name": "🕹 Debug Game",
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build",
-      "program": "${env:GODOT4}",
+      "program": "${env:GODOT}",
       "args": [],
       "cwd": "${workspaceFolder}",
       "stopAtEntry": false,
@@ -22,7 +22,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build",
-      "program": "${env:GODOT4}",
+      "program": "${env:GODOT}",
       "args": [
         "${fileDirname}/${fileBasenameNoExtension}.tscn"
       ],
@@ -34,7 +34,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build",
-      "program": "${env:GODOT4}",
+      "program": "${env:GODOT}",
       "args": [
         // These command line flags are used by GoDotTest to run tests.
         "--run-tests",
@@ -48,7 +48,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build",
-      "program": "${env:GODOT4}",
+      "program": "${env:GODOT}",
       "args": [
         // These command line flags are used by GoDotTest to run tests.
         "--run-tests=${fileBasenameNoExtension}",

@@ -38,7 +38,7 @@
     {
       "label": "build-solutions",
       "group": "test",
-      "command": "dotnet restore; ${env:GODOT4} --headless --build-solutions --quit || exit 0",
+      "command": "dotnet restore; ${env:GODOT} --headless --build-solutions --quit || exit 0",
       "type": "shell",
       "options": {
         "cwd": "${workspaceFolder}"
