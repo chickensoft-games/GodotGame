@@ -126,7 +126,7 @@ Several launch profiles are included for Visual Studio Code:
 
 Note that each launch profile will trigger a build (see `./.vscode/tasks.json`) before debugging the game.
 
-> ⚠️ **Important:** You must setup a `GODOT4` environment variable for the launch configurations above. If you haven't done so already, please see the [Chickensoft Setup Docs][setup-docs].
+> ⚠️ **Important:** You must setup a `GODOT` environment variable for the launch configurations above. If you haven't done so already, please see the [Chickensoft Setup Docs][setup-docs].
 
 ## 🏭 CI/CD
 
