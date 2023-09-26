@@ -22,7 +22,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build",
-      "program": "${env:GODOT4}",
+      "program": "${env:GODOT}",
       "args": [
         "${fileDirname}/${fileBasenameNoExtension}.tscn"
       ],
@@ -34,7 +34,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build",
-      "program": "${env:GODOT4}",
+      "program": "${env:GODOT}",
       "args": [
         // These command line flags are used by GoDotTest to run tests.
         "--run-tests",
