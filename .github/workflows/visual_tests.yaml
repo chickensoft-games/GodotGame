@@ -39,7 +39,6 @@ jobs:
         with:
           # Use the .NET SDK from global.json in the root of the repository.
           global-json-file: global.json
-          dotnet-quality: 'preview'
 
       - name: 📦 Restore Dependencies
         run: dotnet restore
