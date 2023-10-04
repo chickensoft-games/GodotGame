@@ -4,6 +4,6 @@
     "rollForward": "major"
   },
   "msbuild-sdks": {
-    "Godot.NET.Sdk": "4.1.2-rc.1"
+    "Godot.NET.Sdk": "4.1.2"
   }
 }
