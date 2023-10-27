@@ -43,13 +43,16 @@ jobs:
       - name: 📦 Restore Dependencies
         run: dotnet restore
 
-      # Trying to cache the apt packages did not work.
-      # Fortunately, this step runs fairly quick.
-      - name: 💾 Install Graphics Driver Emulators
+      - name: 💾 Add Graphics Driver Emulators Source
         run: |
           sudo rm -f /etc/apt/sources.list.d/microsoft-prod.list
-          sudo add-apt-repository ppa:kisak/kisak-mesa
-          sudo apt-get install -qq mesa-vulkan-drivers binutils
+          sudo add-apt-repository -n ppa:kisak/kisak-mesa
+
+      - name: 💾 Install Graphics Driver Emulators
+        uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: mesa-vulkan-drivers binutils
+          version: 1.0
 
       - name: 🤖 Setup Godot
         uses: chickensoft-games/setup-godot@v1
