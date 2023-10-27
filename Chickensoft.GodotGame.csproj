@@ -29,7 +29,7 @@
   <ItemGroup Condition="'$(Configuration)' == 'Debug'">
     <!-- Test dependencies go here! -->
     <!-- Dependencies added here will not be included in release builds. -->
-    <PackageReference Include="Chickensoft.GoDotTest" Version="1.2.3" />
+    <PackageReference Include="Chickensoft.GoDotTest" Version="1.3.1-godot4.2.0-beta.3" />
     <!-- Used to drive test scenes when testing visual code -->
     <PackageReference Include="GodotTestDriver" Version="2.1.0" />
     <!-- Bring your own assertion library for tests! -->
