@@ -35,7 +35,7 @@ public partial class Main : Node2D {
     //+:cnd:noEmit
 
     // If we don't need to run tests, we can just switch to the game scene.
-    GetTree().ChangeSceneToFile("res://src/Game.tscn");
+    CallDeferred("RunScene");
   }
 
   //-:cnd:noEmit
@@ -44,4 +44,7 @@ public partial class Main : Node2D {
     => _ = GoTest.RunTests(Assembly.GetExecutingAssembly(), this, Environment);
 #endif
   //+:cnd:noEmit
+
+  private void RunScene()
+    => GetTree().ChangeSceneToFile("res://src/Game.tscn");
 }
