@@ -16,7 +16,7 @@ This template allows you to easily create a C# game for Godot 4. Microsoft's `do
 
 ```sh
 # Install this template
-dotnet new --install Chickensoft.GodotGame
+dotnet new install Chickensoft.GodotGame
 
 # Generate a new project based on this template
 dotnet new chickengame --name "MyGameName" --param:author "My Name"
