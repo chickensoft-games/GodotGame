@@ -14,6 +14,7 @@
       "args": [],
       "cwd": "${workspaceFolder}",
       "stopAtEntry": false,
+      "console": "integratedTerminal"
     },
     // Debug the scene that matches the name of the currently open *.cs file
     // (if there's a scene with the same name in the same directory).
@@ -28,6 +29,7 @@
       ],
       "cwd": "${workspaceFolder}",
       "stopAtEntry": false,
+      "console": "integratedTerminal"
     },
     {
       "name": "🧪 Debug Tests",
@@ -42,6 +44,7 @@
       ],
       "cwd": "${workspaceFolder}",
       "stopAtEntry": false,
+      "console": "integratedTerminal"
     },
     {
       "name": "🔬 Debug Current Test",
@@ -56,6 +59,7 @@
       ],
       "cwd": "${workspaceFolder}",
       "stopAtEntry": false,
+      "console": "integratedTerminal"
     },
   ]
 }
