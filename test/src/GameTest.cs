@@ -3,8 +3,8 @@ namespace Chickensoft.GodotGame;
 using System.Threading.Tasks;
 using Godot;
 using Chickensoft.GoDotTest;
-using GodotTestDriver;
-using GodotTestDriver.Drivers;
+using Chickensoft.GodotTestDriver;
+using Chickensoft.GodotTestDriver.Drivers;
 using Shouldly;
 
 public class GameTest : TestClass {
@@ -23,9 +23,9 @@ public class GameTest : TestClass {
   public void Cleanup() => _fixture.Cleanup();
 
   [Test]
-  public async Task TestButtonUpdatesCounter() {
+  public void TestButtonUpdatesCounter() {
     var buttonDriver = new ButtonDriver(() => _game.TestButton);
-    await buttonDriver.ClickCenter();
+    buttonDriver.ClickCenter();
     _game.ButtonPresses.ShouldBe(1);
   }
 }
