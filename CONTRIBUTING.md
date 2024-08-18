@@ -13,7 +13,7 @@ Please read our [code of conduct](#code-of-conduct). We do our best to treat oth
 
 ## Project Setup
 
-This is a C# nuget package, for use with the .NET SDK 6 or 7. As such, the `dotnet` tool will allow you to restore packages and build projects.
+This is a C# nuget package, for use with the .NET SDK 8. As such, the `dotnet` tool will allow you to restore packages and build projects.
 
 ## Coding Guidelines
 
