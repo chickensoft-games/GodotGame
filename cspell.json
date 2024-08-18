@@ -8,7 +8,8 @@
     "badges/**/*.*",
     "coverage/**/*.*",
     ".godot/**/*.*",
-    "**/*.tres"
+    "**/*.tres",
+    "addons/**/*.*"
   ],
   "words": [
     "assemblyfilters",
