@@ -1,5 +1,4 @@
 //-:cnd:noEmit
-
 namespace Chickensoft.GodotGame;
 
 using Godot;
@@ -42,5 +41,4 @@ public partial class Main : Node2D {
   private void RunScene()
     => GetTree().ChangeSceneToFile("res://src/Game.tscn");
 }
-
 //+:cnd:noEmit
