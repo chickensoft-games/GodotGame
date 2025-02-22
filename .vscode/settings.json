@@ -9,8 +9,17 @@
     "editor.formatOnSave": true,
     "editor.formatOnType": false
   },
+  "csharp.debug.justMyCode": false,
+  "csharp.debug.suppressJITOptimizations": true,
   "csharp.semanticHighlighting.enabled": true,
+  "dotnet.backgroundAnalysis.analyzerDiagnosticsScope": "fullSolution",
+  "dotnet.backgroundAnalysis.compilerDiagnosticsScope": "fullSolution",
   "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
+  "dotnet.enableXamlTools": false,
+  "dotnet.formatting.organizeImportsOnFormat": true,
+  "dotnet.preferCSharpExtension": true,
+  // "dotnet.server.useOmnisharp": true, // You decide
+  "dotnetAcquisitionExtension.enableTelemetry": false,
   "editor.semanticHighlighting.enabled": true,
   // C# doc comment colorization gets lost with semantic highlighting, but we
   // need semantic highlighting for proper syntax highlighting with record
@@ -19,6 +28,45 @@
   // Here's a workaround for doc comment highlighting from
   // https://github.com/OmniSharp/omnisharp-vscode/issues/3816
   "editor.tokenColorCustomizations": {
+    "[*]": {
+      // Themes that don't include the word "Dark" or "Light" in them.
+      // These are some bold colors that show up well against most dark and
+      // light themes.
+      //
+      // Change them to something that goes well with your preferred theme :)
+      "textMateRules": [
+        {
+          "scope": "comment.documentation",
+          "settings": {
+            "foreground": "#0091ff"
+          }
+        },
+        {
+          "scope": "comment.documentation.attribute",
+          "settings": {
+            "foreground": "#8480ff"
+          }
+        },
+        {
+          "scope": "comment.documentation.cdata",
+          "settings": {
+            "foreground": "#0091ff"
+          }
+        },
+        {
+          "scope": "comment.documentation.delimiter",
+          "settings": {
+            "foreground": "#aa00ff"
+          }
+        },
+        {
+          "scope": "comment.documentation.name",
+          "settings": {
+            "foreground": "#ef0074"
+          }
+        }
+      ]
+    },
     "[*Dark*]": {
       // Themes that include the word "Dark" in them.
       "textMateRules": [
@@ -88,46 +136,12 @@
           }
         }
       ]
-    },
-    "[*]": {
-      // Themes that don't include the word "Dark" or "Light" in them.
-      // These are some bold colors that show up well against most dark and
-      // light themes.
-      //
-      // Change them to something that goes well with your preferred theme :)
-      "textMateRules": [
-        {
-          "scope": "comment.documentation",
-          "settings": {
-            "foreground": "#0091ff"
-          }
-        },
-        {
-          "scope": "comment.documentation.attribute",
-          "settings": {
-            "foreground": "#8480ff"
-          }
-        },
-        {
-          "scope": "comment.documentation.cdata",
-          "settings": {
-            "foreground": "#0091ff"
-          }
-        },
-        {
-          "scope": "comment.documentation.delimiter",
-          "settings": {
-            "foreground": "#aa00ff"
-          }
-        },
-        {
-          "scope": "comment.documentation.name",
-          "settings": {
-            "foreground": "#ef0074"
-          }
-        }
-      ]
     }
+  },
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "*": "$(capture).import, $(capture).uid"
   },
   "markdownlint.config": {
     // Allow non-unique heading names so we don't break the changelog.
@@ -140,7 +154,6 @@
   ],
   "omnisharp.enableEditorConfigSupport": true,
   "omnisharp.enableMsBuildLoadProjectsOnDemand": false,
-  "omnisharp.enableRoslynAnalyzers": true,
   "omnisharp.maxFindSymbolsItems": 3000,
   "omnisharp.useModernNet": true,
   // Remove these if you're happy with your terminal profiles.
@@ -161,6 +174,5 @@
       "icon": "terminal-powershell",
       "source": "PowerShell"
     }
-  },
-  "dotnet.formatting.organizeImportsOnFormat": true
+  }
 }

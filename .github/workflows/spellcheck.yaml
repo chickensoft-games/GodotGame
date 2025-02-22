@@ -1,14 +1,23 @@
-name: '🧑‍🏫 Spellcheck'
+name: "🧑‍🏫 Spellcheck"
 on:
   push:
+  pull_request:
 
 jobs:
+  # We previously used the cspell action, but it didn't seem to properly respect
+  # the cspell.json file.
   spellcheck:
-    name: '🧑‍🏫 Spellcheck'
+    name: "🧑‍🏫 Spellcheck"
+    # Prevents duplicate workflows from running on PR's that originate from the
+    # repository itself.
+    if: >
+      github.event_name != 'pull_request' ||
+      github.event.pull_request.head.repo.full_name !=
+        github.event.pull_request.base.repo.full_name
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: '.'
+        working-directory: "."
     steps:
       - uses: actions/checkout@v4
         name: 🧾 Checkout
@@ -16,6 +25,6 @@ jobs:
       - uses: streetsidesoftware/cspell-action@v6
         name: 📝 Check Spelling
         with:
-          config: './cspell.json'
+          config: "./cspell.json"
           incremental_files_only: false
-          root: '.'
+          root: "."
