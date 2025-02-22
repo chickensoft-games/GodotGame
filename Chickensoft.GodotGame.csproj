@@ -44,5 +44,6 @@
   </ItemGroup>
   <ItemGroup>
     <!-- Production dependencies go here! -->
+    <PackageReference Include="Chickensoft.GameTools" Version="2.0.0-godot4.4.0-rc.1" />
   </ItemGroup>
 </Project>
