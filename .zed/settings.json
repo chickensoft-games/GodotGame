@@ -1,0 +1,44 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "wrap_guides": [
+    80
+  ],
+  "languages": {
+    "CSharp": {
+      "format_on_save": "on",
+      "formatter": "language_server",
+      // "code_actions_on_format": {
+      //   "source.addMissingImports": true,
+      //   "source.organizeImports": true,
+      //   "source.fixAll": true
+      // },
+      "tab_size": 2
+    },
+    "JSON": {
+      "format_on_save": "on",
+      "formatter": "language_server"
+    },
+    "JSONC": {
+      "format_on_save": "on",
+      "formatter": "language_server"
+    }
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "file_types": {
+    "XML": [
+      "csproj",
+      "xsl",
+      "props"
+    ]
+  }
+}

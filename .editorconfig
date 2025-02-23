@@ -456,3 +456,9 @@ dotnet_diagnostic.RCS1161.severity = none
 dotnet_diagnostic.RCS1165.severity = none
 # Allow keyword-based names so that parameter names like `@event` can be used.
 dotnet_diagnostic.CA1716.severity = none
+# Allow nested ternary operators
+dotnet_diagnostic.RCS1238.severity = none
+# Allow simple if expressions for clarity
+dotnet_diagnostic.IDE0046.severity = none
+# Allow "unnecessary" blank lines for comments
+dotnet_diagnostic.RCS1036.severity = none
