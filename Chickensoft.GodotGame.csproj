@@ -44,6 +44,6 @@
   </ItemGroup>
   <ItemGroup>
     <!-- Production dependencies go here! -->
-    <PackageReference Include="Chickensoft.GameTools" Version="2.0.3" />
+    <PackageReference Include="Chickensoft.GameTools" Version="2.0.4" />
   </ItemGroup>
 </Project>
