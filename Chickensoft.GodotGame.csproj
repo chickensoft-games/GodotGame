@@ -31,7 +31,7 @@
   <ItemGroup Condition=" '$(Configuration)' == 'Debug' or '$(Configuration)' == 'ExportDebug' ">
     <!-- Test dependencies go here! -->
     <!-- Dependencies added here will not be included in release builds. -->
-    <PackageReference Include="Chickensoft.GoDotTest" Version="1.6.3" />
+    <PackageReference Include="Chickensoft.GoDotTest" Version="1.6.4" />
     <!-- Used to drive test scenes when testing visual code -->
     <PackageReference Include="Chickensoft.GodotTestDriver" Version="3.0.2" />
     <!-- Bring your own assertion library for tests! -->
@@ -44,6 +44,6 @@
   </ItemGroup>
   <ItemGroup>
     <!-- Production dependencies go here! -->
-    <PackageReference Include="Chickensoft.GameTools" Version="2.0.4" />
+    <PackageReference Include="Chickensoft.GameTools" Version="2.0.5" />
   </ItemGroup>
 </Project>
