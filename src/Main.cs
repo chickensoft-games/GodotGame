@@ -4,7 +4,7 @@ namespace Chickensoft.GodotGame;
 using Godot;
 using Chickensoft.GameTools.Displays;
 
-#if DEBUG
+#if RUN_TESTS
 using System.Reflection;
 using Chickensoft.GoDotTest;
 #endif
@@ -16,7 +16,7 @@ using Chickensoft.GoDotTest;
 
 public partial class Main : Node2D {
   public Vector2I DesignResolution => Display.UHD4k;
-#if DEBUG
+#if RUN_TESTS
   public TestEnvironment Environment = default!;
 #endif
 
@@ -24,7 +24,7 @@ public partial class Main : Node2D {
     // Correct any erroneous scaling and guess sensible defaults.
     GetWindow().LookGood(WindowScaleBehavior.UIFixed, DesignResolution);
 
-#if DEBUG
+#if RUN_TESTS
     // If this is a debug build, use GoDotTest to examine the
     // command line arguments and determine if we should run tests.
     Environment = TestEnvironment.From(OS.GetCmdlineArgs());
@@ -38,7 +38,7 @@ public partial class Main : Node2D {
     CallDeferred("RunScene");
   }
 
-#if DEBUG
+#if RUN_TESTS
   private void RunTests()
     => _ = GoTest.RunTests(Assembly.GetExecutingAssembly(), this, Environment);
 #endif

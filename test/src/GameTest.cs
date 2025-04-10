@@ -1,10 +1,10 @@
 namespace Chickensoft.GodotGame;
 
 using System.Threading.Tasks;
-using Godot;
 using Chickensoft.GoDotTest;
 using Chickensoft.GodotTestDriver;
 using Chickensoft.GodotTestDriver.Drivers;
+using Godot;
 using Shouldly;
 
 public class GameTest : TestClass {
