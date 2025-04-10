@@ -10,4 +10,5 @@ obj/
 .vs/
 .DS_Store
 
+*.old
 *.translation
