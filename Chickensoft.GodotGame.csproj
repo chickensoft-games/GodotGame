@@ -23,12 +23,19 @@
     <Copyright>© 2024 Chickensoft Organization</Copyright>
     <Authors>Chickensoft Organization</Authors>
     <Company>Chickensoft Organization</Company>
-    <!-- Don't include unit tests in release builds. -->
-    <DefaultItemExcludes Condition="'$(Configuration)' == 'ExportRelease'">
-      $(DefaultItemExcludes);test/**/*
-    </DefaultItemExcludes>
+
+    <SkipTests Condition="'$(SKIP_TESTS)' != ''">true</SkipTests>
+    <RunTests>false</RunTests>
   </PropertyGroup>
-  <ItemGroup Condition=" '$(Configuration)' == 'Debug' or '$(Configuration)' == 'ExportDebug' ">
+
+  <PropertyGroup Condition="
+        ('$(Configuration)' == 'Debug' or '$(Configuration)' == 'ExportDebug')
+        and '$(SkipTests)' != 'true' ">
+    <RunTests>true</RunTests>
+    <DefineConstants>$(DefineConstants);RUN_TESTS</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(RunTests)' == 'true'">
     <!-- Test dependencies go here! -->
     <!-- Dependencies added here will not be included in release builds. -->
     <PackageReference Include="Chickensoft.GoDotTest" Version="1.6.4" />
@@ -42,8 +49,15 @@
     <!-- LightMoq is a Chickensoft package which makes it more like Moq. -->
     <PackageReference Include="LightMoq" Version="0.1.0" />
   </ItemGroup>
+
   <ItemGroup>
     <!-- Production dependencies go here! -->
     <PackageReference Include="Chickensoft.GameTools" Version="2.0.6" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(RunTests)' != 'true'">
+    <Compile          Remove="test/**/*.cs" />
+    <None             Remove="test/**/*"    />
+    <EmbeddedResource Remove="test/**/*"    />
   </ItemGroup>
 </Project>
