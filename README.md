@@ -101,13 +101,13 @@ If you are having trouble with `coverlet` finding your .NET runtime on Windows, 
 Several launch profiles are included for Visual Studio Code:
 
 - 🕹 **Debug Game**
-  
+
   Runs the game in debug mode, allowing you to set breakpoints and inspect variables.
 
 - 🎭 **Debug Current Scene**
 
   Debugs the game and loads the scene with the **same name** and **in the same path** as the C# file that's actively selected in VSCode: e.g., a scene named `MyScene.tscn` must reside in the same directory as `MyScene.cs`, and you must have selected `MyScene.cs` as the active tab in VSCode before running the launch profile.
-  
+
   If GoDotTest is able to find a `.tscn` file with the same name in the same location, it will run the game in debug mode and load the scene.
 
   > Naturally, Chickensoft recommends naming scenes after the C# script they use and keeping them in the same directory so that you can take advantage of this launch profile.
@@ -185,11 +185,11 @@ The included `renovate.json` includes a few configuration options to limit how o
 <!-- Links -->
 
 <!-- Header -->
-[chickensoft-badge]: https://raw.githubusercontent.com/chickensoft-games/chickensoft_site/main/static/img/badges/chickensoft_badge.svg
+[chickensoft-badge]: https://chickensoft.games/img/badges/chickensoft_badge.svg
 [chickensoft-website]: https://chickensoft.games
-[discord-badge]: https://raw.githubusercontent.com/chickensoft-games/chickensoft_site/main/static/img/badges/discord_badge.svg
+[discord-badge]: https://chickensoft.games/img/badges/discord_badge.svg
 [discord]: https://discord.gg/gSjaPgMmYW
-[read-the-docs-badge]: https://raw.githubusercontent.com/chickensoft-games/chickensoft_site/main/static/img/badges/read_the_docs_badge.svg
+[read-the-docs-badge]: https://chickensoft.games/img/badges/read_the_docs_badge.svg
 [docs]: https://chickensoft.games/docs
 [line-coverage]: badges/line_coverage.svg
 [branch-coverage]: badges/branch_coverage.svg
