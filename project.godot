@@ -27,6 +27,10 @@ window/size/initial_position_type=3
 window/size/window_width_override=1280
 window/size/window_height_override=720
 
+[editor]
+
+naming/scene_name_casing=1
+
 [gui]
 
 theme/default_theme_scale=2.0
