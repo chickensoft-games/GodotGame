@@ -38,7 +38,7 @@
   <ItemGroup Condition="'$(RunTests)' == 'true'">
     <!-- Test dependencies go here! -->
     <!-- Dependencies added here will not be included in release builds. -->
-    <PackageReference Include="Chickensoft.GoDotTest" Version="1.7.2" />
+    <PackageReference Include="Chickensoft.GoDotTest" Version="1.7.3" />
     <!-- Used to drive test scenes when testing visual code -->
     <PackageReference Include="Chickensoft.GodotTestDriver" Version="3.1.20" />
     <!-- Bring your own assertion library for tests! -->
