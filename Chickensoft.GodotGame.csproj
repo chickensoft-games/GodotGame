@@ -38,9 +38,9 @@
   <ItemGroup Condition="'$(RunTests)' == 'true'">
     <!-- Test dependencies go here! -->
     <!-- Dependencies added here will not be included in release builds. -->
-    <PackageReference Include="Chickensoft.GoDotTest" Version="2.0.9" />
+    <PackageReference Include="Chickensoft.GoDotTest" Version="2.0.11" />
     <!-- Used to drive test scenes when testing visual code -->
-    <PackageReference Include="Chickensoft.GodotTestDriver" Version="3.1.32" />
+    <PackageReference Include="Chickensoft.GodotTestDriver" Version="3.1.34" />
     <!-- Bring your own assertion library for tests! -->
     <!-- We're using Shouldly for this example, but you can use anything. -->
     <PackageReference Include="Shouldly" Version="4.3.0" />
@@ -52,7 +52,7 @@
 
   <ItemGroup>
     <!-- Production dependencies go here! -->
-    <PackageReference Include="Chickensoft.GameTools" Version="2.1.2" />
+    <PackageReference Include="Chickensoft.GameTools" Version="2.1.4" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(RunTests)' != 'true'">
