@@ -1,15 +1,29 @@
 {
   "recommendations": [
     "alfish.godot-files",
+    "bierner.emojisense",
     "christian-kohler.path-intellisense",
+    "codezombiech.gitignore",
     "DavidAnson.vscode-markdownlint",
     "EditorConfig.EditorConfig",
+    "edwinhuish.better-comments-next",
+    "fernandoescolar.vscode-solution-explorer",
+    "qcz.text-power-tools",
+    "geequlim.godot-tools",
     "gurumukhi.selected-lines-count",
-    "jjkim.gdscript",
+    "IBM.output-colorizer",
+    "jebbs.plantuml",
     "josefpihrt-vscode.roslynator",
     "ms-dotnettools.csharp",
+    "ms-dotnettools.vscode-dotnet-runtime",
+    "muhammad-sammy.csharp",
+    "oderwat.indent-rainbow",
+    "pflannery.vscode-versionlens",
+    "qcz.text-power-tools",
     "selcukermaya.se-csproj-extensions",
+    "stkb.rewrap",
     "streetsidesoftware.code-spell-checker",
-    "VisualStudioExptTeam.vscodeintellicode"
+    "tintoy.msbuild-project-tools",
+    "yzhang.markdown-all-in-one",
   ]
 }
