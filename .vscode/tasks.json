@@ -3,6 +3,7 @@
   "tasks": [
     {
       "label": "build",
+      "group": "build",
       "command": "dotnet",
       "type": "process",
       "args": [
@@ -20,6 +21,7 @@
     },
     {
       "label": "build-without-tests",
+      "group": "build",
       "command": "dotnet",
       "type": "process",
       "options": {
