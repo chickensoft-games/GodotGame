@@ -35,6 +35,11 @@
     <DefineConstants>$(DefineConstants);RUN_TESTS</DefineConstants>
   </PropertyGroup>
 
+  <ItemGroup>
+    <!-- Production dependencies go here! -->
+    <PackageReference Include="Chickensoft.GameTools" Version="2.1.18" />
+  </ItemGroup>
+
   <ItemGroup Condition="'$(RunTests)' == 'true'">
     <!-- Test dependencies go here! -->
     <!-- Dependencies added here will not be included in release builds. -->
@@ -48,11 +53,6 @@
     <PackageReference Include="LightMock.Generator" Version="1.2.3" />
     <!-- LightMoq is a Chickensoft package which makes it more like Moq. -->
     <PackageReference Include="LightMoq" Version="0.1.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <!-- Production dependencies go here! -->
-    <PackageReference Include="Chickensoft.GameTools" Version="2.1.18" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(RunTests)' != 'true'">
