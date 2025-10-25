@@ -9,6 +9,15 @@
     "editor.formatOnSave": true,
     "editor.formatOnType": false
   },
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        // run `clang-format` on Godot shader files when saving
+        "match": "\\.gdshader|\\.gdshaderinc$",
+        "cmd": "clang-format -i '${file}'"
+      }
+    ]
+  },
   "csharp.debug.justMyCode": false,
   "csharp.debug.suppressJITOptimizations": true,
   "csharp.semanticHighlighting.enabled": true,

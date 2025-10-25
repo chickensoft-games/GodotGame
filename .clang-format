@@ -1,0 +1,17 @@
+BasedOnStyle: LLVM
+AlignAfterOpenBracket: DontAlign
+AlignOperands: DontAlign
+AlignTrailingComments:
+AllowAllParametersOfDeclarationOnNextLine: false
+AllowShortFunctionsOnASingleLine: Inline
+BreakConstructorInitializers: AfterColon
+ColumnLimit: 0
+ContinuationIndentWidth: 2
+IndentCaseLabels: true
+IndentWidth: 2
+InsertBraces: true
+KeepEmptyLinesAtTheStartOfBlocks: false
+RemoveSemicolon: true
+SpacesInLineCommentPrefix:
+TabWidth: 2
+UseTab: Always
