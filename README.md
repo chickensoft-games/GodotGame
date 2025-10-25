@@ -132,6 +132,21 @@ Note that each launch profile will trigger a build (see `./.vscode/tasks.json`) 
 
 This game includes various GitHub Actions workflows to help with development.
 
+## 🌈 Shaders
+
+You'll want to install [clang-format] and make sure it's available on your system `PATH` for automatic shader formatting to work whenever you save a `.gdshader` or `.gdshaderinc` file.
+
+- [Install on Windows](https://superuser.com/a/1611210)
+- On macOS, use [homebrew] and run `brew install clang-format`. You'll want to make sure that homebrew is able to update your shell's `PATH` so that the installed `clang-format` binary is available globally.
+- Linux: you know what to do
+
+> [!CAUTION]
+> On Windows, you **must** logout and log back in (or restart your computer) after updating environment variables. On macOS/Linux, you may need to restart your application (if not logout and log back in) for the updated `PATH` to be recognized.
+
+This template includes an updated version of the `.clang-format` file mentioned in the [Godot Shaders Style Guide](https://docs.godotengine.org/en/stable/tutorials/shaders/shaders_style_guide.html#applying-formatting-automatically).
+
+For syntax highlighting, we recommend the [Godot Tools](https://marketplace.visualstudio.com/items?itemName=geequlim.godot-tools) extension since it provides functionality for other Godot engine features as well.
+
 ### 🚥 Tests
 
 Tests run directly inside the GitHub runner machine (using [chickensoft-games/setup-godot]) on every push to the repository. If the tests fail to pass, the workflow will also fail to pass.
@@ -204,3 +219,4 @@ The included `renovate.json` includes a few configuration options to limit how o
 [coverlet-issues]: https://github.com/coverlet-coverage/coverlet/issues/1422
 [GodotSharp]: https://www.nuget.org/packages/GodotSharp/
 [chickensoft-games/setup-godot]: https://github.com/chickensoft-games/setup-godot
+[homebrew]: https://brew.sh/
