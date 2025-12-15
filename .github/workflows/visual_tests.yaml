@@ -71,13 +71,17 @@ jobs:
 
       - name: 🌋 Run Tests in Godot
         run: |
-          xvfb-run godot --audio-driver Dummy --rendering-driver ${{ matrix.render-driver }} --run-tests --quit-on-finish --coverage
+          xvfb-run godot --audio-driver Dummy --rendering-driver ${{ matrix.render-driver }} --run-tests --quit-on-finish
 
           # The --coverage flag is used by GoDotTest to control the exit code
           # of Godot by force-exiting through C#.
           #
-          # Since Godot tends to exit with non-zero exit codes (even on success)
-          # this flag allows GoDotTest to ensure that this step will only fail
-          # when the tests fail.
+          # Since Godot sometimes exits with non-zero exit codes (even on success),
+          # adding this flag to the above command may allow GoDotTest to ensure that
+          # this step will only fail when the tests fail, and not because Godot didn't
+          # exit cleanly.
+          #
+          # However, note that the --coverage flag can sometimes cause other failures
+          # by forcing Godot to exit before it can clean up its resources completely.
 
           echo "Finished running tests in Godot with emulated ${{ matrix.render-driver }} graphics."
