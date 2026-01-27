@@ -1,4 +1,4 @@
-<Project Sdk="Godot.NET.Sdk">
+<Project Sdk="Godot.NET.Sdk/4.6.0">
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <EnableDynamicLoading>true</EnableDynamicLoading>
@@ -28,9 +28,7 @@
     <RunTests>false</RunTests>
   </PropertyGroup>
 
-  <PropertyGroup Condition="
-        ('$(Configuration)' == 'Debug' or '$(Configuration)' == 'ExportDebug')
-        and '$(SkipTests)' != 'true' ">
+  <PropertyGroup Condition="&#xA;        ('$(Configuration)' == 'Debug' or '$(Configuration)' == 'ExportDebug')&#xA;        and '$(SkipTests)' != 'true' ">
     <RunTests>true</RunTests>
     <DefineConstants>$(DefineConstants);RUN_TESTS</DefineConstants>
   </PropertyGroup>
@@ -56,8 +54,8 @@
   </ItemGroup>
 
   <ItemGroup Condition="'$(RunTests)' != 'true'">
-    <Compile          Remove="test/**/*.cs" />
-    <None             Remove="test/**/*"    />
-    <EmbeddedResource Remove="test/**/*"    />
+    <Compile Remove="test/**/*.cs" />
+    <None Remove="test/**/*" />
+    <EmbeddedResource Remove="test/**/*" />
   </ItemGroup>
 </Project>
