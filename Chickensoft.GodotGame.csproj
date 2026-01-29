@@ -28,7 +28,7 @@
     <RunTests>false</RunTests>
   </PropertyGroup>
 
-  <PropertyGroup Condition="&#xA;        ('$(Configuration)' == 'Debug' or '$(Configuration)' == 'ExportDebug')&#xA;        and '$(SkipTests)' != 'true' ">
+  <PropertyGroup Condition="('$(Configuration)' == 'Debug' or '$(Configuration)' == 'ExportDebug') and '$(SkipTests)' != 'true' ">
     <RunTests>true</RunTests>
     <DefineConstants>$(DefineConstants);RUN_TESTS</DefineConstants>
   </PropertyGroup>
