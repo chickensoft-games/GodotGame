@@ -35,8 +35,8 @@
 
   <ItemGroup>
     <!-- Production dependencies go here! -->
-    <PackageReference Include="Chickensoft.GameTools" Version="3.1.33" />
-    <PackageReference Include="Chickensoft.GodotNodeInterfaces" Version="3.0.29" />
+    <PackageReference Include="Chickensoft.GameTools" Version="3.1.34" />
+    <PackageReference Include="Chickensoft.GodotNodeInterfaces" Version="3.0.30" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(RunTests)' == 'true'">
