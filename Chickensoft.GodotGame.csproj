@@ -35,16 +35,16 @@
 
   <ItemGroup>
     <!-- Production dependencies go here! -->
-    <PackageReference Include="Chickensoft.GameTools" Version="3.1.34" />
-    <PackageReference Include="Chickensoft.GodotNodeInterfaces" Version="3.0.30" />
+    <PackageReference Include="Chickensoft.GameTools" Version="3.1.36" />
+    <PackageReference Include="Chickensoft.GodotNodeInterfaces" Version="3.0.32" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(RunTests)' == 'true'">
     <!-- Test dependencies go here! -->
     <!-- Dependencies added here will not be included in release builds. -->
-    <PackageReference Include="Chickensoft.GoDotTest" Version="2.0.43" />
+    <PackageReference Include="Chickensoft.GoDotTest" Version="2.0.44" />
     <!-- Used to drive test scenes when testing visual code -->
-    <PackageReference Include="Chickensoft.GodotTestDriver" Version="3.1.75" />
+    <PackageReference Include="Chickensoft.GodotTestDriver" Version="3.1.77" />
     <!-- Bring your own assertion library for tests! -->
     <!-- We're using Shouldly for this example, but you can use anything. -->
     <PackageReference Include="Shouldly" Version="4.3.0" />
